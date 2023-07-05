@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color: rgb(220,220,220);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.center{
+  
+    margin: 0 auto;
+    width: 350px;
+    height: 600px;
+    padding: 0px 0px;
+    max-width: 400px ;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /*box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;*/
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(230,230,230);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
 }
 
-.App-link {
-  color: #61dafb;
+
+.header_Logo img{
+    width: 200px;
+    height: 120px;
+
+}
+.header_loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header_loginForm form{
+    width: 100%;
+    height: 430px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+
+.header_loginForm input[type=text],
+.header_loginForm input[type=password]{
+    padding: 10px 5px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 3px;
+    color:rgb(0, 0, 0) ;
+    width: 250px;
+    margin-bottom: 10px;
+    background-color: rgb(250, 250, 250);
+
+}
+
+.header_loginForm input[type=submit]{
+    background-color: rgb(118, 179, 247);
+    color: white;
+    border: none;
+    padding: 10px 21px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  
+}
+
+.btn_criar_conta {
+    
+    font-size: 14px;
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 20px 5px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 26px 20px;
+    
+    
+}
+
+.esqueceuSenha{
+    margin-bottom: 60px;
+  
+}
+
+.esqueceuSenha a{
+    color: rgb(19, 53, 106);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn_criar_conta p{
+    display: inline;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.btn_criar_conta a{
+    color: rgb(129, 177, 246);
+    font-weight: bold;
+}
+
+.header_logadoInfo{
+    width: 50%;
+    text-align: right;
+    margin-top: 17px;
+}
+
+.header_logadoInfo a{
+    background-color: rgb(118, 179, 247);
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    border-radius: 8px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.modalCriarConta{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center; /*alinha itens no eixo X*/
+    align-items: center; /* alinha itens no eixo Y*/
+    padding: 0 2%;
+    display: none;
+
+    
+
+}
+
+.formCirarConta{
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 610px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+
+.formCirarConta img{
+    margin-top: 80px;
+}
+
+.formCirarConta h1{
+   color:rgb(50, 50, 50) ;
+   margin-bottom: 15px;
+   font-weight: normal;
+   font-size: 20px;
+   padding-top: 0px;
+   
+}
+
+
+.formCirarConta  input[type=text],
+.formCirarConta input[type=password]{
+    padding: 10px 8px;
+    width: 250px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 5px;
+    color:rgb(0, 0, 0) ;
+    outline: none;
+    margin-bottom: 15px;
+
+}
+
+.formCirarConta input[type=submit]{
+    background-color: rgb(118, 179, 247);
+    color: white;
+    border: none;
+    padding: 10px 21px;
+    border-radius: 5px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.formCirarConta img{
+    width: 160px;
+    height: 100px;
+}
+
+
+.close-modal-cliar{
+    display: flex;
+    justify-content: end;
+    color: #e6e6e6;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.close-modal-cliar:hover{
+    color: rgb(118, 179, 247);
+}
+
+
+.ja-tem-conta{
+    margin-top: 30px;
+  
+}
+
+.ja-tem-conta a{
+    color: rgb(19, 53, 106);
+    font-size: 12px;
+    cursor: pointer;
 }
